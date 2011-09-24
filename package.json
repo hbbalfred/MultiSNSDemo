@@ -4,7 +4,7 @@
   , "author": "Tang Bo Hao<btspoony@gmail.com> (http://blog.boisgames.com)"
   , "repository": { "type":"git", "url":"git://github.com/btspoony/MultiSNSMUD.git"}
   , "version": "0.1.0"
-  , "private": true
+  , "main": "./server.js"
   , "engines" : { "node" : "0.4 || 0.5" }
   , "dependencies": {
       "express": ">=2.4.4"

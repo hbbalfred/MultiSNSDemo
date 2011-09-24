@@ -3,7 +3,7 @@
  */
 exports.configApp = function(app,express) {
 	// Database connection
-	app.set('db-uri', 'mongodb://1poqgzuv4spsk:g07ur39pktr@127.0.0.1:20088/mqrhzp69a271q');
+	app.set('db-uri', 'mongodb://1poqgzuv4spsk:g07ur39pktr@127.0.0.1:20088/vs7kumts8tipz');
 
 	// Google Analytics Key
 	app.set('google-analytics-key', 'XXXXXXXX');
