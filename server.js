@@ -3,16 +3,12 @@
  * This file is the core application launcher. 
  */
 
-// use setup.js to add links to require.paths
-require(__dirname + "/ext/setup").app(__dirname);
-require.paths.unshift('./');
-
 /**
  * Module dependencies.
  */
 var express = require('express'),
 	mongoose = require('mongoose'),
-	config = require('config');
+	config = require('./config');
 
 //Local App Variables
 var port = process.env.PORT || 80;
@@ -38,7 +34,7 @@ app.configure(function(){
 	// Application Mongoose db configure
 	mongoose.connect(app.set('db-uri'));
 	// Load application Schema setings
-	require('schema');
+	require('./schema');
 	
 	// Create session store
 	var MongoStore = require('connect-mongodb')(express, mongoose.mongo);
@@ -77,7 +73,7 @@ app.configure('production', function(){
 // server start listening
 app.listen(port, function(){
 	// Routes init
-	require('router');	
+	require('./lib/router');	
 });
 
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
