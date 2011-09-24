@@ -9,10 +9,10 @@ exports.configApp = function(app,express) {
 	app.set('google-analytics-key', 'XXXXXXXX');
 
 	// cdn url config
-	app.set('cdn-url','http://multisns.cnodejs.net');
+	app.set('cdn-url','http://tbhtest.cnodejs.net');
 	
 	// App url config
-	app.set('server-url', 'http://multisns.cnodejs.net');
+	app.set('server-url', 'http://tbhtest.cnodejs.net');
   
 	// renren app
 	app.set('rr-key', '576ae21a8ee44f48a020dd7c3a8ad04a');
