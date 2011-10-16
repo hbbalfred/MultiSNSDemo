@@ -1,4 +1,4 @@
-# A Open Source MultiSNS MUD Game
+# A Open Source MultiSNS Demo Game
 A demo game for CNodeJS Context
 
 # Dependence 
